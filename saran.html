@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(166, 237, 242);  
+        }
+        h1 {
+            padding: 20px; 
+            color: rgb(0, 0, 0);
+        }
+        form {
+            margin: 50px; 
+            padding: 10px; 
+            background-color: rgb(255, 255, 255); 
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+        input[type="text"], textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #282626; 
+            border-radius: 4px; 
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        nav {
+            background-color: rgb(255, 249, 129);
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;   
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="1.png" alt="Logo Toko" width="170" height="120"/> 
+        <div>
+            <a href="index.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="produk.html">Produk</a>
+            <a href="saran.html">Saran</a>
+        </div>
+    </nav>
+
+    <h1>Formulir Saran</h1>
+    <form action="submit-saran" method="POST">
+        <td>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+        </td>
+
+        <td>
+            <label for="saran">Saran:</label>
+            <textarea id="saran" name="saran" rows="3" required></textarea>
+        </td>
+        <td>
+            <input type="submit" value="Kirim Saran">
+        </td>
+    </form>
+</body>
+</html>
